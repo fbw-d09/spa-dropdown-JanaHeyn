@@ -1,0 +1,72 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+
+.title {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.title h1 {
+    font-size: 3rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* navbar */
+#movieList {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #c299ff;
+    /* border: 1px solid black; */
+}
+
+.filmTitle {
+    height: 60px;
+    width: 200px;
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    /* border: 1px solid black; */
+}
+
+.dropdown {
+    width: 200px;
+    font-size: 1rem;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.activefilmTitle {
+    color: #c299ff;
+    background-color: black;
+}
+
+.activeDropdown {
+    display: flex;
+}
