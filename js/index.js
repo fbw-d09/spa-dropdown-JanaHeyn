@@ -5,7 +5,6 @@ const filmTitleElement = document.querySelectorAll('.filmTitle');
 const dropdown = document.querySelectorAll('.dropdown');
 
 
-// const navElement = document.querySelector(".nav");
 filmListElement.addEventListener("click", (event) => {
     const clickedElement = event.target;
     // console.log(clickedElement);
@@ -16,21 +15,7 @@ filmListElement.addEventListener("click", (event) => {
         }
         });
 
-    dropdown.forEach((element) =>
-    {
-        if(element !== clickedElement.querySelector("ul"))
-        {
-            element.classList.remove("activeDropdown");
-        }
-
-        /* if(element !== clickedElement.querySelector("ul"))
-        {
-            element.classList.remove("activeDropdown");
-        } */
-    });
-
     clickedElement.classList.toggle("activefilmTitle");
-    clickedElement.querySelector("ul").classList.toggle("activeDropdown");
 }); 
 
 

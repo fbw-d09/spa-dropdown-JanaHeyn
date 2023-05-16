@@ -37,29 +37,27 @@ ul li {
     align-items: center;
     margin-top: 10px;
     background-color: #c299ff;
-    /* border: 1px solid black; */
 }
 
 .filmTitle {
     height: 60px;
-    width: 200px;
+    width: 150px;
+    position: relative;
     font-size: 1.25rem;
     text-align: center;
     color: white;
     padding: 15px 0;
-    /* border: 1px solid black; */
 }
 
 .dropdown {
-    width: 200px;
+    width: 100%;
     font-size: 1rem;
     position: absolute;
+    /* top: 0; */
     display: none;
     flex-direction: column;
     color: white;
     background-color: black;
-    padding-top: 30px;
-    padding-bottom: 10px;
 }
 
 .activefilmTitle {
@@ -67,6 +65,18 @@ ul li {
     background-color: black;
 }
 
-.activeDropdown {
+li.activefilmTitle > ul.dropdown {
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: -5px;
 }
+
+#movieList li.activefilmTitle:nth-child(1) > ul.dropdown {
+    display: flex;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    top: 61px;
+}
+
