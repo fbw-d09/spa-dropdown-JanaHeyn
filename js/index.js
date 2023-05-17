@@ -17,37 +17,3 @@ filmListElement.addEventListener("click", (event) => {
 
     clickedElement.classList.toggle("activefilmTitle");
 }); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* filmListElement.onclick = (event) => {
-
-    filmTitleElement.forEach((dropdown) => 
-    {
-        dropdown.children[0].style.display = 'none';
-    });
-
-    // console.log(event.target.nodeName);
-
-    if(event.target.nodeName === 'LI') 
-    {
-        event.target.children[0].style.display = 'flex';
-
-        event.target.onclick = () => 
-        {
-            dropdown.children[0].style.display = 'none';
-        }
-    } 
-} */
-
-
